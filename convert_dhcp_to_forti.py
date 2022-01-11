@@ -4,8 +4,8 @@ import uuid
 import datetime
 
 fileName = input("Please enter the exported file name : ")
-print("Please enter the path of Windows DHCP reservation export file :")
-filepath = input("If the file is in the same directory with the script please leave blank :")
+print()
+filepath = input("Please enter the path of Windows DHCP reservation export file.\nIf the file is in the same directory with the script please leave blank :")
 
 fullPath = ""
 if filepath == "":
