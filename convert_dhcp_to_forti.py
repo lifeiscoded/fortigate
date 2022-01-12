@@ -24,7 +24,7 @@ try:
             if j + 1 > 2:
                 sp = i.split('\t')
                 mac = macaddress.MAC(sp[4])
-                final += 'edit {0} \nset ip {1}\nset mac {2}\nset description {3}next\n'.format((j - 1), sp[0], str(mac).replace('-', ':'), sp[1])
+                final += 'edit {0} \nset ip {1}\nset mac {2}\nset description {3}\nnext\n'.format((j - 1), sp[0], str(mac).replace('-', ':'), sp[1])
 
             j += 1
 except IOError as err:
